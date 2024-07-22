@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calendario con Eventos</title>
+<link rel="stylesheet" href="cldr.css">
+</head>
+<body>
+<div class="calendar-container">
+    <div class="calendar-header">
+        <button id="prevBtn">&lt;</button>
+        <h1 id="calendar-title"></h1>
+        <button id="nextBtn">&gt;</button>
+    </div>
+    <div id="calendar-grid" class="calendar-grid">
+        <!-- Aquí se generará dinámicamente el calendario -->
+    </div>
+</div>
+
+<div id="eventModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Nuevo Evento</h2>
+        <input type="date" id="eventDate">
+        <input type="text" id="eventDescription" placeholder="Descripción del evento">
+        <button id="addEventBtn">Añadir Evento</button>
+    </div>
+</div>
+
+<script src="cldr.js"></script>
+</body>
+</html>
